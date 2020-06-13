@@ -1,0 +1,134 @@
+.advantages {
+    position: relative;
+}
+
+.advantage {
+    width: 100%;
+    height: 300px;
+}
+
+.cool-text {
+    background-color: var(--color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cool-text > p, .cool-text > h2 {
+    margin-left: 20px;
+}
+
+.gradient {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(247,250,250,1) 0%, rgba(37,142,223,1) 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.advantage > p, .advantage > h2 {
+    padding-right: 20px;
+}
+
+.animation-pic {
+    position: absolute;
+    box-sizing: border-box;
+    width: 30%;
+    height: 20%;
+    top: 240px;
+    left: calc(50% - 115px);
+    border: solid white 6px;
+    background-color: var(--color);
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    transition: transform 4s ease-in-out;
+    padding: 10px;
+}
+
+.animation-pic > h2 {
+    color: darkred;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.animation-pic:hover {
+    transform: rotate(360deg);
+}
+
+/* Gallery */
+.gallery {
+    width: 100%;
+}
+
+.pic-section {
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+.container > img {
+    display: block;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.container > p {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s ease-in-out;
+}
+
+.container:hover > img {
+    transform: scale(1.2);
+}
+
+.container:hover > p {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .advantage {
+        height: 400px;
+    }
+    .animation-pic {
+        top: 320px;
+        left: 50px;
+        font-size: 1rem;
+    }
+   .animation-pic:hover {
+       animation-name: coolText;
+       animation-duration: 5s;
+       animation-fill-mode: forwards;
+   }
+   @keyframes coolText {
+       50% {
+           transform-origin: center;
+           transform: translateX(100%) rotate(180deg);
+       }
+       80% {
+           transform: scale(0.1) translateX(calc(100% * 10)) rotate(180deg);
+       }
+   }
+
+   /* gallery */
+   .pic-section {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .container {
+       width: calc(100% / 3);
+   }
+   .container > img {
+       height: 100%;
+   }
+}

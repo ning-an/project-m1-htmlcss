@@ -1,0 +1,10 @@
+
+:root {
+    --color: #3a3633;
+    --border-radius: 4px;
+    --body-font: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,36 @@
+/* Intro */
+.banner {
+    background-image: url(../imgs/bg.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.intro {
+    background-color: rgba(50, 50, 50, 0.3);
+    padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .intro-text {
+        width: 80vw;
+        border: white solid 8px;
+        display: flex;
+    }
+    .intro-text > h1 {
+        align-self: center;
+    }
+    .text {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        border-top: dotted 2px lightgrey;
+    }
+    .text > p {
+        flex-basis: 45%;
+    }
+}

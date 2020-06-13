@@ -1,0 +1,81 @@
+.myform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    height: 100px;
+}
+
+.input {
+    margin: 10px 0;
+    position: relative;
+}
+
+.email {
+    display: flex;
+}
+.email label {
+    display: none;
+}
+.emailbox {
+    box-sizing: border-box;
+    border: var(--color) solid;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    height: 30px;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.sendbtn {
+    border: none;
+    padding: 0;
+}
+.email img {
+    background-color: var(--color);
+    opacity: 0.7;
+    height: 30px;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.email:hover .emailbox{
+    opacity: 1;
+}
+.email:hover img {
+    opacity: 1;
+}
+
+/* checkbox */
+.checkbox {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    margin: auto;    
+    border: var(--color) solid 2px;
+    opacity: 0.7;
+    border-radius: var(--border-radius);
+}
+
+.checkmark {
+    background-color: var(--color);
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    bottom: 5px;
+    left: 2px;
+    display: none;
+}
+
+.checkbox-container:hover .checkbox {
+    background-color: lightgrey;
+}
+
+.checkbox:checked ~.checkmark {
+    display: block;
+}
+
+.checkbox:checked {
+    border: var(--color) solid 3px;
+}

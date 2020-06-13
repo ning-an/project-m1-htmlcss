@@ -10,6 +10,159 @@
   </head>
 
   <body>
-    <!-- write some HTML! -->
+    <!-- nav bar -->
+    <header>
+      <nav class='nav'>
+        <a href="#intro"><img src="./imgs/logo.svg" alt="logo" class='logo'></a>
+        <div class='dropdown'>
+          <img src="./imgs/menu.svg" alt="menu" class='menu logo'>
+          <ul class='nav-list'>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li class='products'>
+              <a href="#">Products</a>
+              <ul class='product-list'>
+                <li><a href="https://www.spacex.com/vehicles/falcon-9/">Falcon 9</a></li>
+                <li><a href="https://www.tesla.com/en_ca/models">Model S</a></li>
+                <li><a href="https://www.apple.com/ca/iphone/">iPhone</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main body -->
+    <main>
+
+      <!-- Intro with background img -->
+      <div id='intro' class='banner'>
+        <div class='intro-text'>
+          <h1>Introducing Falcon 9</h1>
+          <div class='intro'>
+            <h2>We make dreams come true</h2>
+            <div class='text'>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nemo? Ullam totam at ipsam harum dolorum magni tenetur dolore sapiente unde!</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt doloremque nisi iste ducimus dolorum exercitationem, a ratione corporis dolore rem adipisci voluptas ipsa libero id.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- features -->
+      <div class='features' id='features'>
+        <div class='feature'>
+          <img src="./imgs/icon1.svg" alt="tick">
+          <h3>Amazing feature 1</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam odit molestias officiis sit, labore totam adipisci qui possimus quod omnis deserunt consequatur?.</p>
+          <button class='featureBtn'>Get it</button>
+        </div>
+        <div class='feature'>
+          <img src="./imgs/icon2.svg" alt="loop">
+          <h3>Amazing feature 2</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum impedit inventore magni amet rem!</p>
+          <button class='featureBtn'>Sell it</button>
+        </div>
+        <div class='feature'>
+          <img src="./imgs/icon3.svg" alt="fingerprint">
+          <h3>Amazing feature 3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea in illo tempore mollitia alias maiores! Sit veritatis nisi, dolores totam natus, quae in iure quidem dignissimos commodi numquam.</p>
+          <button class='featureBtn'>Do it</button>
+        </div>
+      </div>
+
+      <!-- Advantage Section -->
+      <div class='advantages' id='advantages'>
+        <div class='advantage cool-text'>
+          <h2>Some cool text</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat possimus ducimus error tempore, minus illum quod, dignissimos architecto ad accusantium iste suscipit quaerat nisi veniam voluptate asperiores dolores eveniet?</p>
+        </div>
+        <div class='animation-pic'>
+          <h2>This looks cool</h2>
+          <p>Hover me if you like random animations</p>
+        </div>
+        <div class='advantage gradient'>
+          <h2>Slick gradient</h2>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <div class='gallery' id='gallery'>
+        <div class='pic-section'>
+          <div class='container'>
+            <img src="./imgs/tesla.jpg" alt="Tesla">
+            <p>Our flagship car: The Model S</p>
+          </div>
+          <div class='container'>
+            <img src="./imgs/procat.jpg" alt="procat">
+            <p>Cool cat</p>
+          </div>
+          <div class='container'>
+            <img src="./imgs/hyperloop.jpg" alt="hyperloop">
+            <p>Introducing: The Hyperloop</p>
+          </div>
+          <div class='container'>
+            <img src="./imgs/sneakycat.jpg" alt="sneakycat">
+            <p>So sneaky</p>
+          </div>
+          <div class='container'>
+            <img src="./imgs/falconrocket.jpeg" alt="rocket">
+            <p>BFR - Big Falcon Rocket</p>
+          </div>
+          <div class='container'>
+            <img src="./imgs/funnycat.jpg" alt="funnycat">
+            <p>So much fun</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- form -->
+      <form class='myform'>
+        <fieldset>
+          <legend>Register to our mailing list: </legend>
+          <div class='email input'>
+            <label for='email'>Email</label>
+            <input type="email" name='email' id='email' required class='emailbox'>
+            <button class='sendbtn'><img src="./imgs/send.svg" alt="send"></button>
+          </div>
+          <div class='input checkbox-container'>
+            <label>
+              <input type="checkbox" name='cat-image' value='send' class='checkbox'>
+              Send me daily cat images
+              <img src="./imgs/checkbox.svg" alt="checked" class='checkmark'>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <!-- footer -->
+    <footer class='footer'>
+      <div class='f-section'>
+        <p>About us</p>
+        <p>Privacy Policy</p>
+        <p>Legal notes</p>
+        <p>Copyright</p>
+      </div>
+      <div class='f-section'>
+        <p>About us</p>
+        <p>Privacy Policy</p>
+        <p>Legal notes</p>
+        <p>Copyright</p>
+      </div>
+      <div class='f-section'>
+        <p>About us</p>
+        <p>Privacy Policy</p>
+        <p>Legal notes</p>
+        <p>Copyright</p>
+      </div>
+      <div class='f-section'>
+        <p>About us</p>
+        <p>Privacy Policy</p>
+        <p>Legal notes</p>
+        <p>Copyright</p>
+      </div>
+    </footer>
   </body>
 </html>
