@@ -11,4 +11,4 @@ Create a webpage using HTML and CSS file that reproduces the following: https://
 
 ## Screenshots
 
-![Intro]('imgs/intro.gif')
+![Intro](imgs/intro.gif)
