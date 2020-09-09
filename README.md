@@ -9,6 +9,6 @@ Create a webpage using HTML and CSS file that reproduces the following: https://
 * Mobile Responsive
 * Animations and effects
 
-## Screenshot(s)
+## Screenshots
 
-![Intro](imgs/intro.gif')
+![Intro]('imgs/intro.gif')
