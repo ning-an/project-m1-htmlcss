@@ -14,3 +14,9 @@ Create a webpage using HTML and CSS file that reproduces the following: https://
 ## Screenshots
 
 ![Intro section](imgs/introduction.gif)
+![Content section](imgs/content.gif)
+![Gallery section](imgs/gallery.gif)
+
+## Contact
+
+Created by [@Ning An](https://github.com/ning-an) - feel free to contact me!
